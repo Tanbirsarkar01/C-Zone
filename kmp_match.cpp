@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//We are searching the string t in string s
 void lpsfind(vector<int> &lps,string s){
         int pre=0;
         int suf=1;
@@ -23,6 +24,7 @@ void lpsfind(vector<int> &lps,string s){
     }
     bool KMP_MATCH(string s,string t){
         vector<int> lps(t.size(),0);
+        //We are searching the string t in string s
         lpsfind(lps,t);
 
         int i=0,j=0;
