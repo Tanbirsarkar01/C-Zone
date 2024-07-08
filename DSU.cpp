@@ -1,5 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
 class DisjointSet{
     vector<int>rank,parent,size;
     public:
@@ -49,11 +47,3 @@ class DisjointSet{
         }
     }
 };
-
-int main(){
-    DisjointSet ds(7);
-    ds.unionBySize(1,2);
-    ds.unionBySize(2,3);
-
-
-}
